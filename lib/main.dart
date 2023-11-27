@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:full_app/src/features/authentication/screens/splash_screen/splash_screen.dart';
-import 'package:full_app/src/utils/theme/theme.dart';
 import 'package:get/get.dart';
 
+import 'package:full_app/src/features/authentication/screens/splash_screen/splash_screen.dart';
+import 'package:full_app/src/utils/theme/theme.dart';
 
 void main() => runApp(const App());
 

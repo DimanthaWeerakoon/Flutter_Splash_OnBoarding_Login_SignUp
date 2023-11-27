@@ -5,7 +5,7 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
   return Scaffold(
      
-  );
+  ); 
   }
 
 
