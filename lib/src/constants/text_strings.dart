@@ -14,3 +14,12 @@
  const String tOnBoardingCounter1 = "1/3";
  const String tOnBoardingCounter2 = "2/3";
  const String tOnBoardingCounter3 = "3/3";
+
+
+ //-- Welcome Screen Text
+ const String tWelcomeTitle = "Build Awesome Apps";
+ const String tWelcomeSubTitle = "Develope Your Skills Daily & Be A Genius!";
+
+ //-- Generic Text
+ const String tLogin = "Login";
+ const String tSignUp = "SignUp";
