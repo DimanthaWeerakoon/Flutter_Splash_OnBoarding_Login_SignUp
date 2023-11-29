@@ -40,7 +40,7 @@
 
  const String tSignUpTitle = "Get On Board";
  const String tSignUpSubTitle = "Create your profile to start the journey!";
- const String tAlreadyHaveAnAccount = "Already Have An Acount?";
+ const String tAlreadyHaveAnAccount = "Already Have An Acount? ";
  const String tFullName = "Full Name";
  const String tPhoneNumber = "Phone Number";
  

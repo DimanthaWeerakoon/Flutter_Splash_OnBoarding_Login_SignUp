@@ -23,7 +23,7 @@ class TSignUpFormWidget extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 20.0,
+              height: 10.0,
             ),
             TextFormField(
               decoration: const InputDecoration(
@@ -33,7 +33,7 @@ class TSignUpFormWidget extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 20.0,
+              height: 10.0,
             ),
             TextFormField(
               decoration: const InputDecoration(
@@ -43,7 +43,7 @@ class TSignUpFormWidget extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 20.0,
+              height: 10.0,
             ),
             TextFormField(
               decoration: const InputDecoration(
@@ -53,7 +53,7 @@ class TSignUpFormWidget extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 20.0,
+              height: 10.0,
             ),
             SizedBox(
               width: double.infinity,
