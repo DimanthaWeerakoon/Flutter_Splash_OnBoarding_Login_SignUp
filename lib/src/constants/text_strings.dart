@@ -23,3 +23,24 @@
  //-- Generic Text
  const String tLogin = "Login";
  const String tSignUp = "SignUp";
+
+
+ //-- Login Screen Text
+ const String tLoginTitle = "Welcome Back";
+ const String tLoginSubTitle = "Make it work, make it right, make it fast.";
+ const String tRememberMe = "Remember Me?";
+ const String tEmail = "E-Mail";
+ const String tPassword = "Password";
+ const String tForgotPassword = "Forgot Password?";
+ const String tSignInWithGoogle = "Sign In With Google";
+ const String tDontHaveAnAccount = "Don't Have An Account? ";
+
+
+ //-- SignUp Screen Text
+
+ const String tSignUpTitle = "Get On Board";
+ const String tSignUpSubTitle = "Create your profile to start the journey!";
+ const String tAlreadyHaveAnAccount = "Already Have An Acount?";
+ const String tFullName = "Full Name";
+ const String tPhoneNumber = "Phone Number";
+ 

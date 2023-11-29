@@ -16,3 +16,11 @@ const String tOnBoardingImage3 = "assets/images/onboarding_images/image6.png";
 //-- Welcome Screen Images
 
 const String tWelcomeSreenImage = "assets/images/welcome_images/image1.png";
+const String tLoginScreenImage = "assets/images/welcome_images/image3.png";
+
+
+//-- Logo Images
+
+const String tGoogleLogoImage = "assets/logo/google_logo.png";
+
+
