@@ -3,6 +3,9 @@ import 'package:full_app/src/common_widgets/form_header_widget.dart';
 import 'package:full_app/src/constants/image_strings.dart';
 import 'package:full_app/src/constants/sizes.dart';
 import 'package:full_app/src/constants/text_strings.dart';
+import 'package:full_app/src/features/authentication/screens/forget_password_screen/forget_password_otp/otp_screen.dart';
+import 'package:get/get.dart';
+
 
 class TForgotPasswordMailScreen extends StatelessWidget {
   const TForgotPasswordMailScreen({super.key});
@@ -38,7 +41,13 @@ class TForgotPasswordMailScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 20.0,),
-                    SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () {}, child: const Text(tNext),),)
+                    SizedBox(
+                      width: double.infinity, 
+                      child: ElevatedButton(
+                        onPressed: () {
+                          Get.to(() => const TOTPScreen());
+                        }, 
+                        child: const Text(tNext),),)
                    ], 
                   )
                 )
