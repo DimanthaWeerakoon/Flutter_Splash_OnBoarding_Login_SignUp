@@ -36,6 +36,7 @@ class TSignUpFormWidget extends StatelessWidget {
               height: 10.0,
             ),
             TextFormField(
+              keyboardType: TextInputType.phone,
               decoration: const InputDecoration(
                 label: Text(tPhoneNumber),
                 hintText: tPhoneNumber,

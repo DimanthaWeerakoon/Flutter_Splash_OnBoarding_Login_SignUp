@@ -17,6 +17,8 @@ class App extends StatelessWidget {
     theme: TAppTheme.lightTheme,
     darkTheme: TAppTheme.darkTheme,
     themeMode: ThemeMode.dark,
+    defaultTransition: Transition.leftToRightWithFade,
+    transitionDuration: const Duration(milliseconds: 500),
     home: SplashScreen(),
    );
   }

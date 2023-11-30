@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:full_app/src/constants/colors.dart';
 import 'package:full_app/src/constants/sizes.dart';
 import 'package:full_app/src/constants/text_strings.dart';
+import 'package:full_app/src/features/authentication/screens/forget_password_screen/forget_password_options/forget_password_btn_widget.dart';
+import 'package:full_app/src/features/authentication/screens/forget_password_screen/forget_password_options/forgot_password_modal_bottam_sheet.dart';
 
 
 class TLoginForm extends StatelessWidget {
@@ -40,11 +41,16 @@ class TLoginForm extends StatelessWidget {
               )
             ),
             const SizedBox(height: textButtonHeight,),
+
+          //-- FORGOT PASSWORD BUTTON
             Align(
               alignment: Alignment.centerRight,
               child: TextButton(
-                onPressed: () {}, 
+                onPressed: (){
+                  TForgotPasswordScreen.buildShowModalBottomSheet(context);
+                }, 
                 child: const Text(tForgotPassword))),
+          //-- LOGIN BUTTON
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(onPressed: () {}, child: Text(tLogin.toUpperCase())))
@@ -54,4 +60,5 @@ class TLoginForm extends StatelessWidget {
       )
     );
   }
+
 }

@@ -43,4 +43,21 @@
  const String tAlreadyHaveAnAccount = "Already Have An Acount? ";
  const String tFullName = "Full Name";
  const String tPhoneNumber = "Phone Number";
+
+
+ //-- Forgot Password Text
+ const String tForgotPasswordTitle = "Make Selection";
+ const String tForgotPasswordSubTitle = "Select one of the options given below to reset your password";
+ const String tResetViaEMail = "Reset via E-mail";
+ const String tResetViaPhone = "Reset via Phone";
+ const String tForgotPasswordText = "Forgot Password";
+ const String tNext = "Next";
+
+ //-- Forgot Password via Phone - Text
+
+ const String tForgotPhoneSubTitle = "Enter your Registered Phone number to receive OTP";
+
+ //-- Forgot Password via Mail - Text
+
+ const String tForgotMailSubTitle = "Enter your Registered E-mail to receive OTP";
  

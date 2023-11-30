@@ -3,7 +3,9 @@ import 'package:full_app/src/common_widgets/form_header_widget.dart';
 import 'package:full_app/src/constants/image_strings.dart';
 import 'package:full_app/src/constants/sizes.dart';
 import 'package:full_app/src/constants/text_strings.dart';
+import 'package:full_app/src/features/authentication/screens/login/login_screen.dart';
 import 'package:full_app/src/features/authentication/screens/signup/widgets/signup_form_widget.dart';
+import 'package:get/get.dart';
 
 class TSignUpScreen extends StatelessWidget {
   const TSignUpScreen({super.key});
@@ -21,6 +23,10 @@ class TSignUpScreen extends StatelessWidget {
                 image: tWelcomeSreenImage,
                 title: tSignUpTitle,
                 subTitle: tSignUpSubTitle,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                heightBetween: 30.0,
+                imageHeight: 0.2,
+                textAlign: TextAlign.start,
               ),
               const TSignUpFormWidget(),
               // const SizedBox(height: -20.0,),
@@ -44,7 +50,10 @@ class TSignUpScreen extends StatelessWidget {
                     height: 10.0,
                   ),
                   TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pop(context);
+                        Get.to(() => TLoginScreen());
+                      },
                       child: Text.rich(TextSpan(
                           text: tAlreadyHaveAnAccount,
                           style: Theme.of(context).textTheme.bodyText1,

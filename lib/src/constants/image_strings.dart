@@ -2,6 +2,7 @@
 /*-- App Images Strings --*/
 
 // -- Splash Screen Images
+
 const String tSplashIcon = "assets/images/splash_images/splash-top-icon.png";
 const String tSplashImage = "assets/images/splash_images/splash-screen-image.png";
 
@@ -24,3 +25,6 @@ const String tLoginScreenImage = "assets/images/welcome_images/image3.png";
 const String tGoogleLogoImage = "assets/logo/google_logo.png";
 
 
+//-- Forgot Password
+
+const String tForgotPasswordImage = "assets/images/forgot_password_images/forgot_password.png";
