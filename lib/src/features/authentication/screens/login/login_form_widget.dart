@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:full_app/src/constants/sizes.dart';
 import 'package:full_app/src/constants/text_strings.dart';
+import 'package:full_app/src/features/authentication/screens/dashboard/dashboard_screen.dart';
 import 'package:full_app/src/features/authentication/screens/forget_password_screen/forget_password_options/forget_password_btn_widget.dart';
 import 'package:full_app/src/features/authentication/screens/forget_password_screen/forget_password_options/forgot_password_modal_bottam_sheet.dart';
-
+import 'package:get/get.dart';
 
 class TLoginForm extends StatelessWidget {
   const TLoginForm({
@@ -53,7 +54,10 @@ class TLoginForm extends StatelessWidget {
           //-- LOGIN BUTTON
             SizedBox(
               width: double.infinity,
-              child: ElevatedButton(onPressed: () {}, child: Text(tLogin.toUpperCase())))
+              child: ElevatedButton(onPressed: () {
+                Navigator.pop(context);
+                Get.to(() => const Dashboard());
+              }, child: Text(tLogin.toUpperCase())))
 
           ],
         ),

@@ -65,3 +65,14 @@
  const String tOtpTitle = "CO\nDE";
  const String tOtpSubTitle = "Verification";
  const String tOtpMessage = "Enter the verification code sent at ";
+
+
+ //-- Dashboard Text
+ const String tDashboardTitle = "Hey, Coding with D";
+ const String tDashboardHeading = "Explore Courses";
+ const String tDashboardSearch = "Sreach...";
+ const String tDashboardBannerTitle1 = "Mobile Dev for Beginners";
+ const String tDashboardBannerTitle2 = "Flutter";
+ const String tDashboardBannerSubTitle = "10 Lessons";
+ const String tDashboardButton = "View All";
+ const String tDashboardTopCourses = "Top Courses";

@@ -28,3 +28,14 @@ const String tGoogleLogoImage = "assets/logo/google_logo.png";
 //-- Forgot Password
 
 const String tForgotPasswordImage = "assets/images/forgot_password_images/forgot_password.png";
+
+
+//-- Dashboard Images
+const String tDashUserImage = "assets/images/dashboard_images/dash_person.png";
+const String tDashJavaImage = "assets/images/dashboard_images/java_dash.png";
+const String tDashFlutterImage = "assets/images/dashboard_images/Flutter_dash.png";
+const String tDashJSImage = "assets/images/dashboard_images/JS_dash.png";
+const String tDashNodeImage = "assets/images/dashboard_images/Node_dash.jpg";
+const String tDashPythonImage = "assets/images/dashboard_images/python_dash.png";
+const String tDashReactImage = "assets/images/dashboard_images/React_dash.png";
+const String tDashFigmaImage = "assets/images/dashboard_images/figma_dash.png";
