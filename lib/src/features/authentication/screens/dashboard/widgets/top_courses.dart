@@ -77,8 +77,8 @@ class DashTopCourse extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: 363,
-            height: 200,
+            width: 374,
+            height: 160,
             child: Padding(
               padding: const EdgeInsets.only(top: 5, right: 10),
               child: Container(
@@ -102,7 +102,7 @@ class DashTopCourse extends StatelessWidget {
                         child: Image(
                           image: AssetImage(
                             tDashReactImage), 
-                            height: 80,)),
+                            height: 70,)),
               
                       ]
                     ),
@@ -133,8 +133,8 @@ class DashTopCourse extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: 363,
-            height: 200,
+            width: 374,
+            height: 160,
             child: Padding(
               padding: const EdgeInsets.only(top: 5, right: 10),
               child: Container(
@@ -158,7 +158,7 @@ class DashTopCourse extends StatelessWidget {
                         child: Image(
                           image: AssetImage(
                             tDashReactImage), 
-                            height: 80,)),
+                            height: 70,)),
               
                       ]
                     ),
