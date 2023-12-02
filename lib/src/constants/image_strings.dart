@@ -39,3 +39,4 @@ const String tDashNodeImage = "assets/images/dashboard_images/Node_dash.jpg";
 const String tDashPythonImage = "assets/images/dashboard_images/python_dash.png";
 const String tDashReactImage = "assets/images/dashboard_images/React_dash.png";
 const String tDashFigmaImage = "assets/images/dashboard_images/figma_dash.png";
+const String tDashBookmarkImage = "assets/images/dashboard_images/bookmark_dash.png";
