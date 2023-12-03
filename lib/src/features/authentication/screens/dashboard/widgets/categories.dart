@@ -31,7 +31,7 @@ class DashCategories extends StatelessWidget {
                         height: 45,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: tDarkColor),
+                            color: tCategoryColor),
                         child: Center(
                           child: Text(
                             list[index].title,

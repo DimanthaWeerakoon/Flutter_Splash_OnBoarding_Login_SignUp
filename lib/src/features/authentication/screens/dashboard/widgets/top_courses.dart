@@ -23,7 +23,7 @@ class DashTopCourse extends StatelessWidget {
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) => SizedBox(
-            width: 374,
+            width: 370,
             height: 160,
             child: Padding(
               padding: const EdgeInsets.only(top: 5, right: 10),
