@@ -40,3 +40,7 @@ const String tDashPythonImage = "assets/images/dashboard_images/python_dash.png"
 const String tDashReactImage = "assets/images/dashboard_images/React_dash.png";
 const String tDashFigmaImage = "assets/images/dashboard_images/figma_dash.png";
 const String tDashBookmarkImage = "assets/images/dashboard_images/bookmark_dash.png";
+
+//-- Profile Images
+const String tProfileImage = "assets/images/profile_images/dash_person.png";
+

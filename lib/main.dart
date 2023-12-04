@@ -10,7 +10,7 @@ import 'package:full_app/src/utils/theme/theme.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform)
-      .then((value) => Get.put(AuthenticationRepostory()));
+      .then((value) => Get.put(AuthenticationRepository()));
   runApp(const App());
 }
 

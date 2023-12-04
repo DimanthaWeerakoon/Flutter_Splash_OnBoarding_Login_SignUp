@@ -67,7 +67,7 @@
  const String tOtpMessage = "Enter the verification code sent at ";
 
 
- //-- Dashboard Text
+ //-- Dashboard Screen Text
  const String tDashboardTitle = "Hey, Coding with D";
  const String tDashboardHeading = "Explore Courses";
  const String tDashboardSearch = "Sreach...";
@@ -76,3 +76,23 @@
  const String tDashboardBannerSubTitle = "10 Lessons";
  const String tDashboardButton = "View All";
  const String tDashboardTopCourses = "Top Courses";
+
+
+ //-- Profile Screen Texts
+
+ const String tProfile = "Profile";
+ const String tEditProfile = "Edit Profile";
+ const String tLogoutDialogHeading = "Logout";
+ const String tProfileHeading = "Coding with D";
+ const String tProfileSubHeading = "superAdmin@codingwithd.com";
+ //--Menu
+ const String tMenu5 = "Logout";
+ const String tMenu1 = "Settings";
+ const String tMenu4 = "Information";
+ const String tMenu2 = "Billing Details";
+ const String tMenu3 = "User Management";
+
+ //-- Update Profile Screen Text
+ const String tDelete = "Delete";
+ const String tJoined = "Joined";
+ const String tJoinedAt = "31 October 2023";

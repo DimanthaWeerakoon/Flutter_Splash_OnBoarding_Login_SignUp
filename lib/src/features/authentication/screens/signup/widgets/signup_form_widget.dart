@@ -67,9 +67,13 @@ class TSignUpFormWidget extends StatelessWidget {
                 child: ElevatedButton(
                     onPressed: () {
                       if (formKey.currentState!.validate()) {
-                        SignUpController.instance.phoneAuthentication(controller.phoneNo.text.trim());
-                        Get.to(() => const TOTPScreen());
-                        // SignUpController.instance.resgisterUser(controller.email.text.trim(), controller.password.text.trim());
+                        // SignUpController.instance.phoneAuthentication(controller.phoneNo.text.trim());
+                        // Get.to(() => const TOTPScreen());
+                        SignUpController.instance.resgisterUser(
+                            controller.email.text.trim(),
+                            controller.password.text.trim(),
+                            controller.phoneNo.text.trim(),
+                            controller.fullName.text.trim());
                       }
                     },
                     child: Text(tSignUp.toUpperCase())),

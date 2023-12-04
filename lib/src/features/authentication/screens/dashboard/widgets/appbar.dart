@@ -28,7 +28,7 @@ class DashBoardAppBar extends StatelessWidget implements PreferredSizeWidget{
                 borderRadius: BorderRadius.circular(10), color: tCardBgColor),
             child: IconButton(
                 onPressed: () {
-                  AuthenticationRepostory.instance.logout();
+                  AuthenticationRepository.instance.logout();
                 },
                 icon: const Image(
                   image: AssetImage(tDashUserImage),

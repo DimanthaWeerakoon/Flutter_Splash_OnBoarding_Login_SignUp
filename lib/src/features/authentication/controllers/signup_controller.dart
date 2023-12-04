@@ -14,12 +14,12 @@ import 'package:get/get.dart';
   final phoneNo = TextEditingController();
 
   //Call this Function from Design & it will do the rest
-  void resgisterUser(String email, String password) {
-    AuthenticationRepostory.instance.createUserWithEmailAndPassword(email, password);
+  void resgisterUser(String email, String password, String phoneNo, String fullName) {
+    AuthenticationRepository.instance.createUserWithEmailAndPassword(email, password);
 
   }
 
   void phoneAuthentication(String phoneNo) {
-    AuthenticationRepostory.instance.phoneAuthentication(phoneNo);
+    AuthenticationRepository.instance.phoneAuthentication(phoneNo);
   }
  }
