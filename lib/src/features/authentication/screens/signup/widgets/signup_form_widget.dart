@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:full_app/src/constants/sizes.dart';
 import 'package:full_app/src/constants/text_strings.dart';
 import 'package:full_app/src/features/authentication/controllers/signup_controller.dart';
+import 'package:full_app/src/features/authentication/screens/forget_password_screen/forget_password_otp/otp_screen.dart';
 import 'package:get/get.dart';
 
 class TSignUpFormWidget extends StatelessWidget {
@@ -66,9 +67,9 @@ class TSignUpFormWidget extends StatelessWidget {
                 child: ElevatedButton(
                     onPressed: () {
                       if (formKey.currentState!.validate()) {
-                        SignUpController.instance.resgisterUser(
-                            controller.email.text.trim(),
-                            controller.password.text.trim());
+                        SignUpController.instance.phoneAuthentication(controller.phoneNo.text.trim());
+                        Get.to(() => const TOTPScreen());
+                        // SignUpController.instance.resgisterUser(controller.email.text.trim(), controller.password.text.trim());
                       }
                     },
                     child: Text(tSignUp.toUpperCase())),

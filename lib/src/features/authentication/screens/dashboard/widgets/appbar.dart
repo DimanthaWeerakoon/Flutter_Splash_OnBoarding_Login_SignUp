@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:full_app/src/constants/colors.dart';
 import 'package:full_app/src/constants/image_strings.dart';
 import 'package:full_app/src/constants/text_strings.dart';
+import 'package:full_app/src/repository/authentication_respository/authentication_repository.dart';
 
 
 class DashBoardAppBar extends StatelessWidget implements PreferredSizeWidget{
@@ -26,7 +27,9 @@ class DashBoardAppBar extends StatelessWidget implements PreferredSizeWidget{
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10), color: tCardBgColor),
             child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  AuthenticationRepostory.instance.logout();
+                },
                 icon: const Image(
                   image: AssetImage(tDashUserImage),
                 )))
@@ -35,6 +38,5 @@ class DashBoardAppBar extends StatelessWidget implements PreferredSizeWidget{
   }
   
   @override
-  // TODO: implement preferredSize
   Size get preferredSize => const Size.fromHeight(60);
 }

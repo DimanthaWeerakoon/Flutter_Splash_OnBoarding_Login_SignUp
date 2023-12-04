@@ -19,4 +19,7 @@ import 'package:get/get.dart';
 
   }
 
+  void phoneAuthentication(String phoneNo) {
+    AuthenticationRepostory.instance.phoneAuthentication(phoneNo);
+  }
  }
