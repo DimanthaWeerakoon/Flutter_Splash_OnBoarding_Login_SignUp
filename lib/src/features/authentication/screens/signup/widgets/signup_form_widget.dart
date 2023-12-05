@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:full_app/src/constants/sizes.dart';
 import 'package:full_app/src/constants/text_strings.dart';
 import 'package:full_app/src/features/authentication/controllers/signup_controller.dart';
+import 'package:full_app/src/features/authentication/models/user_model.dart';
 import 'package:full_app/src/features/authentication/screens/forget_password_screen/forget_password_otp/otp_screen.dart';
 import 'package:get/get.dart';
 
@@ -67,13 +68,22 @@ class TSignUpFormWidget extends StatelessWidget {
                 child: ElevatedButton(
                     onPressed: () {
                       if (formKey.currentState!.validate()) {
+                        ///For Phone Authentication
                         // SignUpController.instance.phoneAuthentication(controller.phoneNo.text.trim());
                         // Get.to(() => const TOTPScreen());
-                        SignUpController.instance.resgisterUser(
-                            controller.email.text.trim(),
-                            controller.password.text.trim(),
-                            controller.phoneNo.text.trim(),
-                            controller.fullName.text.trim());
+
+                        ///For Email & Password Authetication
+                        // SignUpController.instance.resgisterUser(
+                        //     controller.email.text.trim(),
+                        //     controller.password.text.trim());
+
+                        final user = UserModel(
+                          fullname: controller.fullName.text.trim(), 
+                          email: controller.email.text.trim(), 
+                          phoneNo: controller.phoneNo.text.trim(), 
+                          password: controller.password.text.trim()
+                        );
+                        SignUpController.instance.createUser(user);
                       }
                     },
                     child: Text(tSignUp.toUpperCase())),

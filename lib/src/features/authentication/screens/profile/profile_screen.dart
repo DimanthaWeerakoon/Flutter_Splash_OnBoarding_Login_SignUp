@@ -8,13 +8,14 @@ import 'package:full_app/src/features/authentication/screens/profile/widgets/pro
 import 'package:full_app/src/repository/authentication_respository/authentication_repository.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:get/get.dart';
+import 'package:provider/provider.dart';
 
 class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
+  const ProfileScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     final isDarkMode = Theme.of(context).brightness == Brightness.dark;
-    var txtTheme = Theme.of(context).textTheme;
+    var txtTheme = Theme.of(context).textTheme; 
     return Scaffold(
       appBar: AppBar(
         backgroundColor: tWhiteColor,
@@ -30,7 +31,7 @@ class ProfileScreen extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon:
-                Icon(isDarkMode ? LineAwesomeIcons.sun : LineAwesomeIcons.moon),
+                Icon(isDarkMode ? LineAwesomeIcons.sun : Icons.nights_stay),
             color: tDarkColor,
           )
         ],
@@ -137,3 +138,4 @@ class ProfileScreen extends StatelessWidget {
     );
   }
 }
+
