@@ -5,6 +5,7 @@ import 'package:full_app/src/constants/sizes.dart';
 import 'package:full_app/src/constants/text_strings.dart';
 import 'package:full_app/src/features/authentication/screens/profile/update_profile_screen.dart';
 import 'package:full_app/src/features/authentication/screens/profile/widgets/profile_menu_widget.dart';
+import 'package:full_app/src/features/authentication/screens/user_management/user_management.dart';
 import 'package:full_app/src/repository/authentication_respository/authentication_repository.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 import 'package:get/get.dart';
@@ -110,7 +111,7 @@ class ProfileScreen extends StatelessWidget {
               txtTheme: txtTheme,
               title: "User Management",
               icon: LineAwesomeIcons.user_check,
-              onPress: () {},
+              onPress: (){ Get.to(() => const UserManagement());}
             ),
             const Divider(color: Colors.grey),
             const SizedBox(

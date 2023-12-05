@@ -54,6 +54,7 @@ class TSignUpFormWidget extends StatelessWidget {
                 height: 10.0,
               ),
               TextFormField(
+                obscureText: true,
                 controller: controller.password,
                 decoration: const InputDecoration(
                     label: Text(tPassword),

@@ -96,3 +96,6 @@
  const String tDelete = "Delete";
  const String tJoined = "Joined";
  const String tJoinedAt = "31 October 2023";
+
+ //-- User Management Screen
+const String tUserManagement = "User Management";
