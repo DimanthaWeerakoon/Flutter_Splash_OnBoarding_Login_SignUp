@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:full_app/firebase_options.dart';
 import 'package:full_app/src/repository/authentication_respository/authentication_repository.dart';
 import 'package:get/get.dart';
-
-import 'package:full_app/src/features/authentication/screens/splash_screen/splash_screen.dart';
 import 'package:full_app/src/utils/theme/theme.dart';
 
 void main() async {

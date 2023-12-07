@@ -18,13 +18,32 @@ class UserModel {
     
   });
 
-  toJson() {
+  UserModel copyWith({
+    String? id,
+    String? fullname,
+    String? email,
+    String? phoneNo,
+    String? password,
+  }) {
+    return UserModel(
+      id: id ?? this.id,
+      fullname: fullname ?? this.fullname,
+      email: email ?? this.email,
+      phoneNo: phoneNo ?? this.phoneNo,
+      password: password ?? this.password,
+    );
+  }
+
+  Map<String, dynamic> toJson() {
     return {
+      "id" : id,
       "Fullname" : fullname,
       "Email" : email,
       "Phone" : phoneNo,
       "Password" : password
     };
+
+    
   }
 
   /// Map user fetched from Firebase to UserModel
