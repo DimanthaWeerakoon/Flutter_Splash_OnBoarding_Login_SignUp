@@ -1,15 +1,19 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:line_awesome_flutter/line_awesome_flutter.dart';
+
 import 'package:full_app/src/constants/colors.dart';
 import 'package:full_app/src/constants/image_strings.dart';
 import 'package:full_app/src/constants/sizes.dart';
 import 'package:full_app/src/constants/text_strings.dart';
 import 'package:full_app/src/features/authentication/controllers/profile_controller.dart';
 import 'package:full_app/src/features/authentication/models/user_model.dart';
-import 'package:line_awesome_flutter/line_awesome_flutter.dart';
-import 'package:get/get.dart';
 
 class UpdateProfileScreen extends StatelessWidget {
-  const UpdateProfileScreen({super.key});
+  const UpdateProfileScreen({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,6 +40,7 @@ class UpdateProfileScreen extends StatelessWidget {
             if (snapshot.connectionState == ConnectionState.done) {
               if (snapshot.hasData) {
                 UserModel userData = snapshot.data as UserModel;
+                final userId = userData.id;
                 final email = TextEditingController(text: userData.email);
                 final password = TextEditingController(text: userData.password);
                 final fullName = TextEditingController(text: userData.fullname);
@@ -74,7 +79,6 @@ class UpdateProfileScreen extends StatelessWidget {
                       children: [
                         TextFormField(
                           controller: fullName,
-                          // initialValue: userData.fullname,
                           decoration: const InputDecoration(
                               label: Text(tFullName),
                               hintText: tFullName,
@@ -85,7 +89,6 @@ class UpdateProfileScreen extends StatelessWidget {
                         ),
                         TextFormField(
                           controller: email,
-                          // initialValue: userData.email,
                           decoration: const InputDecoration(
                               label: Text(tEmail),
                               hintText: tEmail,
@@ -96,7 +99,6 @@ class UpdateProfileScreen extends StatelessWidget {
                         ),
                         TextFormField(
                           controller: phoneNo,
-                          // initialValue: userData.phoneNo,
                           keyboardType: TextInputType.phone,
                           decoration: const InputDecoration(
                               label: Text(tPhoneNumber),
@@ -108,7 +110,6 @@ class UpdateProfileScreen extends StatelessWidget {
                         ),
                         TextFormField(
                           controller: password,
-                          // initialValue: userData.password,
                           obscureText: true,
                           decoration: const InputDecoration(
                               label: Text(tPassword),
@@ -123,6 +124,7 @@ class UpdateProfileScreen extends StatelessWidget {
                             child: ElevatedButton(
                               onPressed: () async {
                                 final userData = UserModel(
+                                  id: userId,
                                   email: email.text.trim(),
                                   fullname: email.text.trim(),
                                   password: email.text.trim(),

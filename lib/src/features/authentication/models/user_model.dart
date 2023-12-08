@@ -18,25 +18,26 @@ class UserModel {
     
   });
 
-  UserModel copyWith({
-    String? id,
-    String? fullname,
-    String? email,
-    String? phoneNo,
-    String? password,
-  }) {
-    return UserModel(
-      id: id ?? this.id,
-      fullname: fullname ?? this.fullname,
-      email: email ?? this.email,
-      phoneNo: phoneNo ?? this.phoneNo,
-      password: password ?? this.password,
-    );
-  }
+  // UserModel copyWith({
+  //   String? id,
+  //   String? fullname,
+  //   String? email,
+  //   String? phoneNo,
+  //   String? password,
+  // }) {
+  //   return UserModel(
+  //     id: id ?? this.id,
+  //     fullname: fullname ?? this.fullname,
+  //     email: email ?? this.email,
+  //     phoneNo: phoneNo ?? this.phoneNo,
+  //     password: password ?? this.password,
+  //   );
+  // }
 
-  Map<String, dynamic> toJson() {
+  // Map<String, dynamic> 
+  toJson() {
     return {
-      "id" : id,
+      // "id" : id,
       "Fullname" : fullname,
       "Email" : email,
       "Phone" : phoneNo,
